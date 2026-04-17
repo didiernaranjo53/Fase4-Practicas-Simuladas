@@ -245,8 +245,10 @@ def menu_interactivo():
             mail_cli = input("Ingresa Correo (con @): ")
             try:
                 nuevo = Cliente(id_cli, nom_cli, mail_cli)
+                logging.info(f"[Registro Manual] Nuevo cliente creado: {nuevo.nombre}")
                 print(f"[EXITO] -> {nuevo.obtener_detalles()}")
             except ValidationError as ve:
+                logging.warning(f"[Registro Manual Fallido]: {ve}")
                 print(f"[ERROR CAPTURADO] El cliente no se creo porque: {ve}")
         elif opcion == "3":
             print("Saliendo del sistema...")
