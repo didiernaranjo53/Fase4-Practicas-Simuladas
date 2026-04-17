@@ -1,0 +1,34 @@
+2026-04-16 21:13:04,681 - ERROR - [Prueba] Fallo de validación: Validación Fallida: El correo es inválido.
+2026-04-16 21:15:43,961 - ERROR - [Prueba] Fallo de validación: Validación Fallida: El correo es inválido.
+2026-04-16 21:24:52,778 - INFO - =========== NUEVA SESION DE PRUEBAS AUTOMATICAS ===========
+2026-04-16 21:24:52,778 - WARNING - Simulacion Op2: Validacion: El correo es invalido (falta '@').
+2026-04-16 21:24:52,778 - WARNING - Simulacion Op3: Validacion: El nombre debe tener al menos 3 letras.
+2026-04-16 21:24:52,778 - INFO - Intencion de reserva PENDIENTE para Soluciones IT.
+2026-04-16 21:24:52,778 - INFO - Procesando reserva...
+2026-04-16 21:24:52,778 - INFO - EXITO: Resumen | Soluciones IT | Pentesting | Total: $1437.50
+2026-04-16 21:24:52,778 - INFO - --- Estado final Reserva (Soluciones IT): CONFIRMADA EXITOSAMENTE --- 
+
+2026-04-16 21:24:52,778 - INFO - Intencion de reserva PENDIENTE para Fallos Corp.
+2026-04-16 21:24:52,778 - INFO - Procesando reserva...
+2026-04-16 21:24:52,778 - ERROR - [ERROR MANEJADO] Problema en calculo: Fallo grave al calcular Reserva de la Sala. - Causa: Las horas de reserva no pueden ser cero ni negativas.
+2026-04-16 21:24:52,778 - INFO - --- Estado final Reserva (Fallos Corp): FALLIDA --- 
+
+2026-04-16 21:24:52,779 - ERROR - Simulacion Op5: Fallo grave al calcular Reserva de la Sala.
+2026-04-16 21:24:52,779 - INFO - Intencion de reserva PENDIENTE para Error Tech.
+2026-04-16 21:24:52,779 - INFO - Procesando reserva...
+2026-04-16 21:24:52,779 - CRITICAL - [FALLO INESPERADO] Excepcion general: Costo negativo por exceso de descuento.
+2026-04-16 21:24:52,779 - INFO - --- Estado final Reserva (Error Tech): ERROR CRITICO --- 
+
+2026-04-16 21:24:52,779 - ERROR - Simulacion Op6 Exception: Costo negativo por exceso de descuento.
+2026-04-16 21:24:52,779 - WARNING - Simulacion Op7: Objeto Cliente invalido en la Reserva.
+2026-04-16 21:24:52,779 - INFO - Intencion de reserva PENDIENTE para Crash Test.
+2026-04-16 21:24:52,779 - INFO - Procesando reserva...
+2026-04-16 21:24:52,779 - CRITICAL - [FALLO INESPERADO] Excepcion general: can't multiply sequence by non-int of type 'float'
+2026-04-16 21:24:52,779 - INFO - --- Estado final Reserva (Crash Test): ERROR CRITICO --- 
+
+2026-04-16 21:24:52,779 - ERROR - Simulacion Op9 Exception: can't multiply sequence by non-int of type 'float'
+2026-04-16 21:24:52,779 - INFO - Intencion de reserva PENDIENTE para Fin Prueba.
+2026-04-16 21:24:52,779 - INFO - Procesando reserva...
+2026-04-16 21:24:52,779 - INFO - EXITO: Resumen | Fin Prueba | Auditorio | Total: $1500.00
+2026-04-16 21:24:52,779 - INFO - --- Estado final Reserva (Fin Prueba): CONFIRMADA EXITOSAMENTE --- 
+
