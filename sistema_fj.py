@@ -2,13 +2,14 @@ import logging
 from abc import ABC, abstractmethod
 
 # ==========================================
-# CONFIGURACION DE REGISTRO
+# CONFIGURACION DE LOGS
 # ==========================================
 logging.basicConfig(
     filename='logs.txt',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
+
 # ==========================================
 # EXCEPCIONES PERSONALIZADAS
 # ==========================================
@@ -28,6 +29,8 @@ class Entidad(ABC):
     @abstractmethod
     def obtener_detalles(self):
         pass
+
+
 # ==========================================
 # CLASE CLIENTE
 # ==========================================
@@ -71,7 +74,7 @@ class Cliente(Entidad):
         return f"Cliente: {self.nombre} | ID: {self.identificacion} | Email: {self.email}"
 
 # ==========================================
-# CLASE SERVICIO
+# CLASE  SERVICIO
 # ==========================================
 class Servicio(Entidad):
     def __init__(self, nombre_servicio, tarifa_base):
@@ -254,6 +257,7 @@ def simulacion():
         except Exception as e:
             print("Error controlado:", e)
 
+
 # ==========================================
 # MENU
 # ==========================================
@@ -309,7 +313,6 @@ def menu():
 
         except Exception as e:
             print("Error:", e)
-
 # ==========================================
 # EJECUCION
 # ==========================================
