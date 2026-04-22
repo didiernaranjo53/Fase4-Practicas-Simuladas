@@ -15,10 +15,8 @@ logging.basicConfig(
 # ==========================================
 class ValidationError(Exception):
     pass
-
 class ReservaError(Exception):
     pass
-
 class OperacionNoPermitidaError(Exception):
     pass
 
@@ -29,8 +27,6 @@ class Entidad(ABC):
     @abstractmethod
     def obtener_detalles(self):
         pass
-
-
 # ==========================================
 # CLASE CLIENTE
 # ==========================================
@@ -47,7 +43,7 @@ class Cliente(Entidad):
     @identificacion.setter
     def identificacion(self, valor):
         if not isinstance(valor, str) or not valor.strip():
-            raise ValidationError("La identificación debe ser texto válido.")
+            raise ValidationError("Identificación debe ser texto válido.")
         self._identificacion = valor
 
     @property
@@ -57,7 +53,7 @@ class Cliente(Entidad):
     @nombre.setter
     def nombre(self, valor):
         if len(valor.strip()) < 3:
-            raise ValidationError("El nombre debe tener mínimo 3 caracteres.")
+            raise ValidationError("Nombre debe tener mínimo 3 caracteres.")
         self._nombre = valor
 
     @property
@@ -67,7 +63,7 @@ class Cliente(Entidad):
     @email.setter
     def email(self, valor):
         if "@" not in valor:
-            raise ValidationError("Correo electrónico inválido.")
+            raise ValidationError("Correo electrónico no válido.")
         self._email = valor
 
     def obtener_detalles(self):
@@ -103,11 +99,10 @@ class ReservaSala(Servicio):
             return total
 
         except ValueError as e:
-            raise ReservaError("Error en reserva de sala.") from e
+            raise ReservaError("Error en la reserva de sala.") from e
 
     def obtener_detalles(self):
         return f"Reserva Sala: {self.nombre_servicio} - ${self.tarifa_base}/hora"
-
 
 class AlquilerEquipo(Servicio):
     def calcular_costo_final(self, dias, impuesto=0, descuento=0):
@@ -124,7 +119,6 @@ class AlquilerEquipo(Servicio):
 
     def obtener_detalles(self):
         return f"Alquiler Equipo: {self.nombre_servicio} - ${self.tarifa_base}/día"
-
 
 class AsesoriaEspecializada(Servicio):
     def calcular_costo_final(self, sesiones, impuesto=0, descuento=0):
@@ -267,9 +261,9 @@ def menu():
     while True:
         print("\n===== SOFTWARE FJ =====")
         print("1. Registrar cliente")
-        print("2. Crear reserva")
-        print("3. Listar clientes")
-        print("4. Listar reservas")
+        print("2. Crear una reserva")
+        print("3. Listar los clientes")
+        print("4. Listar las reservas")
         print("5. Ejecutar simulación")
         print("6. Salir")
 
