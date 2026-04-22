@@ -7,6 +7,11 @@ Sistema Integral Orientado a Objetos para la gestión de clientes, servicios y r
 
 ## 🎯 Objetivo general del Proyecto
 Diseñar un sistema orientado a objetivos para la gestion de clientes, servicios y reservas de la empresa Software FJ, Contribuyendo con principios solidos de programacion y el manejo avanzado de excepciones, manteniendo estabilidad, modularidad sin hacer uso de base de datos
+## 🎯 Objetivos especificos
+Hacer uso en la programacion de abstraccion, encapsulados, herencia y polimorfismo.
+Diseñar un sistema de reservas
+ejecutar métodos de sobrecarga para calculos rapidos de costos
+Evidenciar eventos y errores de los logs
 
 ## 🧩 Arquitectura del Sistema
 El proyecto se basa en una arquitectura de scripts unificados divididos en capas lógicas:
