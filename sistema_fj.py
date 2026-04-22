@@ -2,7 +2,7 @@ import logging
 from abc import ABC, abstractmethod
 
 # ==========================================
-# CONFIGURACION DE LOGS
+# CONFIGURACION DE REGISTRO
 # ==========================================
 logging.basicConfig(
     filename='logs.txt',
@@ -21,9 +21,8 @@ class ReservaError(Exception):
 class OperacionNoPermitidaError(Exception):
     pass
 
-
 # ==========================================
-# CLASE ABSTRACTA BASE
+# CLASE BASE
 # ==========================================
 class Entidad(ABC):
     @abstractmethod
@@ -72,9 +71,8 @@ class Cliente(Entidad):
     def obtener_detalles(self):
         return f"Cliente: {self.nombre} | ID: {self.identificacion} | Email: {self.email}"
 
-
 # ==========================================
-# CLASE ABSTRACTA SERVICIO
+# CLASE SERVICIO
 # ==========================================
 class Servicio(Entidad):
     def __init__(self, nombre_servicio, tarifa_base):
@@ -84,7 +82,6 @@ class Servicio(Entidad):
     @abstractmethod
     def calcular_costo_final(self, tiempo, impuesto=0, descuento=0):
         pass
-
 
 # ==========================================
 # SERVICIOS ESPECIALIZADOS
