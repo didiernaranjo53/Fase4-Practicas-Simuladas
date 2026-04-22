@@ -28,7 +28,6 @@ class Entidad(ABC):
     @abstractmethod
     def obtener_detalles(self):
         pass
-
 # ==========================================
 # CLASE CLIENTE
 # ==========================================
