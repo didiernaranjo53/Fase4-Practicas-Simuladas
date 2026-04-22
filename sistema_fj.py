@@ -251,9 +251,8 @@ def simulacion():
         except Exception as e:
             print("Error controlado:", e)
 
-
 # ==========================================
-# MENU
+# MENU DEL SISTEMA
 # ==========================================
 def menu():
     sistema = SistemaGestion()
@@ -308,7 +307,7 @@ def menu():
         except Exception as e:
             print("Error:", e)
 # ==========================================
-# EJECUCION
+# EJECUCION DEL PROGRAMA
 # ==========================================
 if __name__ == "__main__":
     menu()
