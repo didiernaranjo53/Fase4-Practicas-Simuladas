@@ -5,12 +5,13 @@
 
 Sistema Integral Orientado a Objetos para la gestión de clientes, servicios y reservas. Desarrollado como parte de la **Fase 4 - Componente Práctico** de la UNAD.
 
-## 🎯 Objetivos del Proyecto
-El sistema fue diseñado garantizando un manejo robusto de excepciones y estabilidad extrema (sin bases de datos), demostrando la aplicación práctica de los cuatro pilares de la Programación Orientada a Objetos:
-- **Abstracción**
-- **Encapsulamiento**
-- **Herencia**
-- **Polimorfismo**
+## 🎯 Objetivo General del proyecto
+
+Diseñar un sistema orientado a objetivos para la gestión de clientes, servicios y reservas de la empresa Software FJ, contribuyendo con principios sólidos de programación y el manejo avanzado de excepciones, manteniendo estabilidad, modularidad sin hacer uso de base de datos.
+
+## 🎯 Objetivo especifico
+
+Hacer uso en la programación de abstracción, encapsulados, herencia y polimorfismo. Diseñar un sistema de reservas ejecutar métodos de sobrecarga para cálculos rápidos de costos Evidenciar eventos y errores de los logs
 
 ## 🧩 Arquitectura del Sistema
 El proyecto se basa en una arquitectura de scripts unificados divididos en capas lógicas:
